@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git e GitHub - Guia Completo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <a href="#inicio">Início</a>
+            <a href="#git">Git</a>
+            <a href="#github">GitHub</a>
+            <a href="#comandos">Comandos</a>
+            <a href="#praticas">Boas Práticas</a>
+        </div>
+
+        <h1 class="main-title" id="inicio">Git e GitHub: Guia Completo</h1>
+
+        <!-- Seção Git Expandida -->
+        <section class="section-card git-section" id="git">
+            <h2>Git - Sistema de Controle de Versão</h2>
+            <div class="grid-container">
+                <div class="feature-card">
+                    <h3>O que é Git?</h3>
+                    <p>Sistema de controle de versão distribuído que permite rastrear mudanças no código-fonte durante o desenvolvimento de software.</p>
+                    <h4>Características Principais:</h4>
+                    <ul>
+                        <li>Sistema distribuído</li>
+                        <li>Alta performance</li>
+                        <li>Segurança e integridade de dados</li>
+                        <li>Suporte a desenvolvimento não-linear</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h3>História e Desenvolvimento</h3>
+                    <p>Criado por Linus Torvalds em 2005 para o desenvolvimento do kernel Linux.</p>
+                    <ul>
+                        <li>Substituiu o BitKeeper</li>
+                        <li>Foco em velocidade e eficiência</li>
+                        <li>Código aberto e gratuito</li>
+                        <li>Comunidade ativa de desenvolvedores</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Conceitos Fundamentais do Git</h3>
+            <div class="grid-container">
+                <div class="feature-card">
+                    <h4>Working Directory</h4>
+                    <p>Área onde você trabalha com seus arquivos.</p>
+                    <ul>
+                        <li>Arquivos modificados</li>
+                        <li>Arquivos não rastreados</li>
+                        <li>Área de trabalho local</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>Staging Area</h4>
+                    <p>Área intermediária onde as mudanças são preparadas.</p>
+                    <ul>
+                        <li>Seleção de mudanças</li>
+                        <li>Preparação para commit</li>
+                        <li>Organização de alterações</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>Repository</h4>
+                    <p>Banco de dados com todo o histórico do projeto.</p>
+                    <ul>
+                        <li>Histórico completo</li>
+                        <li>Branches e tags</li>
+                        <li>Metadados do projeto</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <h3>Fluxo de Trabalho Básico</h3>
+                <ol>
+                    <li>Modificar arquivos no Working Directory</li>
+                    <li>Adicionar mudanças ao Staging Area (git add)</li>
+                    <li>Fazer commit das mudanças (git commit)</li>
+                    <li>Sincronizar com repositório remoto (git push/pull)</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Seção GitHub Expandida -->
+        <section class="section-card github-section" id="github">
+            <h2>GitHub - Plataforma Colaborativa</h2>
+            <div class="grid-container">
+                <div class="feature-card">
+                    <h3>Recursos Avançados</h3>
+                    <ul>
+                        <li>GitHub Actions (CI/CD)</li>
+                        <li>GitHub Pages (Hospedagem)</li>
+                        <li>GitHub Packages</li>
+                        <li>GitHub Codespaces</li>
+                        <li>GitHub Discussions</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h3>Colaboração</h3>
+                    <ul>
+                        <li>Fork e Pull Requests</li>
+                        <li>Code Review</li>
+                        <li>Issues e Projects</li>
+                        <li>Wiki Documentation</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h3>Segurança</h3>
+                    <ul>
+                        <li>Dependabot Alerts</li>
+                        <li>Security Advisories</li>
+                        <li>Code Scanning</li>
+                        <li>Secret Scanning</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Comandos Expandida -->
+        <section class="section-card commands-section" id="comandos">
+            <h2>Comandos Essenciais e Avançados</h2>
+            
+            <h3>Configuração Inicial</h3>
+            <div class="grid-container">
+                <div class="comando">
+                    git config --global user.name "Seu Nome"<br>
+                    <small>Define seu nome para commits</small>
+                </div>
+                <div class="comando">
+                    git config --global user.email "seu@email.com"<br>
+                    <small>Define seu email para commits</small>
+                </div>
+            </div>
+
+            <h3>Comandos Básicos</h3>
+            <div class="grid-container">
+                <div class="comando">
+                    git init<br>
+                    <small>Inicia um novo repositório</small>
+                </div>
+                <div class="comando">
+                    git clone [url]<br>
+                    <small>Clona um repositório existente</small>
+                </div>
+                <div class="comando">
+                    git status<br>
+                    <small>Mostra o estado dos arquivos</small>
+                </div>
+            </div>
+
+            <h3>Comandos de Branch</h3>
+            <div class="grid-container">
+                <div class="comando">
+                    git branch [nome-branch]<br>
+                    <small>Cria uma nova branch</small>
+                </div>
+                <div class="comando">
+                    git checkout [nome-branch]<br>
+                    <small>Muda para outra branch</small>
+                </div>
+                <div class="comando">
+                    git merge [branch]<br>
+                    <small>Une branches</small>
+                </div>
+            </div>
+
+            <h3>Comandos Avançados</h3>
+            <div class="grid-container">
+                <div class="comando">
+                    git rebase [branch]<br>
+                    <small>Reaplica commits em outra base</small>
+                </div>
+                <div class="comando">
+                    git cherry-pick [commit]<br>
+                    <small>Aplica commit específico</small>
+                </div>
+                <div class="comando">
+                    git stash<br>
+                    <small>Salva modificações temporariamente</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Boas Práticas Expandida -->
+        <section class="section-card practices-section" id="praticas">
+            <h2>Boas Práticas de Desenvolvimento</h2>
+            
+            <div class="grid-container">
+                <div class="feature-card">
+                    <h3>Commits</h3>
+                    <ul>
+                        <li>Use mensagens claras e descritivas</li>
+                        <li>Faça commits pequenos e frequentes</li>
+                        <li>Use prefixos convencionais (feat:, fix:, etc.)</li>
+                        <li>Inclua referências a issues quando relevante</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h3>Branches</h3>
+                    <ul>
+                        <li>Mantenha a main/master sempre estável</li>
+                        <li>Use branches para features</li>
+                        <li>Nomeie branches de forma descritiva</li>
+                        <li>Delete branches após merge</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h3>Workflow</h3>
+                    <ul>
+                        <li>Faça pull antes de push</li>
+                        <li>Resolva conflitos localmente</li>
+                        <li>Use rebase para manter histórico limpo</li>
+                        <li>Faça code review regularmente</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botão para História dos Computadores -->
+        <div class="next-topic-button">
+            <a href="historia-computadores.html" class="glow-button">
+                <span class="button-text">Explorar: História dos Computadores</span>
+                <span class="button-icon">→</span>
+            </a>
+        </div>
+
+        <footer>
+            <p><em>Desenvolvido para ajudar iniciantes e profissionais a dominarem Git e GitHub</em></p>
+        </footer>
+    </div>
+</body>
+</html>
